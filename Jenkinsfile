@@ -6,16 +6,17 @@ pipeline{
     stages{
         stage("Stage One"){
             steps{
-                sh ...
+                
                 echo "This is stage one"
-                echo Name of the url is ${ENV_URL}
-                ...
+                echo "Name of the url is ${ENV_URL}"
+            
             }
         }
 
         stage("Stage Two"){
             steps{
                 echo "This is stage Two"
+                 echo "Name of the url is ${ENV_URL}"
             }
         }
 
