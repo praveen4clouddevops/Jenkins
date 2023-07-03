@@ -8,9 +8,15 @@ pipeline{
         stage("Stage One"){
             steps{
                 
-                echo "This is stage one"
-                echo "Name of the url is ${ENV_URL}"
-                env
+                sh '''
+                        echo DevOps Training
+                        echo AWS Training
+                        echo Batch54
+                        echo Name of the URL is ${ENV_URL}
+                
+                        env
+
+                    '''
             }
         }
 
